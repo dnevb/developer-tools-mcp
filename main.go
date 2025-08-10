@@ -13,8 +13,7 @@ func main() {
 		Name:    "dev_tools",
 		Title:   "Developer tools MCP server",
 		Version: "1.0",
-	}, &mcp.ServerOptions{})
-	server.Sessions()
+	}, nil)
 
 	converter.AddTools(server)
 

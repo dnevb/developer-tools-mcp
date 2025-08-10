@@ -25,12 +25,15 @@ This is a list of tools that are planned to be implemented, based on the offerin
 - **String to Hex/Hex to String:** Converts strings to their hexadecimal representation and back.
 - **HTML Entity Encoder/Decoder:** Encodes and decodes HTML special characters.
 - **Data Interchange Format Converter:** Converts between various data formats like JSON, YAML, XML, TOML, TSV, and CSV.
-- **Date/Timestamp Converter:** Converts between human-readable dates and Unix timestamps.
-- **Color Converter:** Converts between different color formats (e.g., HEX, RGB, HSL).
-- **CSS Unit Converter:** Converts between different CSS units (e.g., px, em, rem).
+- **Date/Timestamp Converter:** Converts between human-readable dates and Unix timestamps, and provides various output formats (e.g., ISO 8601, RFC 3339, Mongo ObjectID, Excel date/time).
+- **`color_converter`**: Convert a color from one format to another. Supported input formats: hex, rgb, hsl, hsv, cmyk. Output formats: hex, rgb, hsl, hsv, cmyk.
+- **`color_palette_generator`**: Generate a color palette from a base color and a schema. Supported schemas: triadic, quadratic, tetradic, analogous, splitcomplementary.
+- **`random_color_generator`**: Generate a number of random colors using different generators. Supported generators: pastel, warm, happy, similarhue.
+- **`color_scheme_generator`**: Generate a color scheme from a base color. Supported schemes: shades, tints, tones.
+
 - **Crypto Key Format Converter:** Converts between cryptographic key formats like PEM, PPK, DER, and JWK.
 - **Docker Run to Docker Compose Converter:** Converts a `docker run` command into a `docker-compose.yml` file.
-- **IDN Punycode Converter:** Converts Internationalized Domain Names (IDNs) to and from Punycode.
+
 
 ### Web
 
