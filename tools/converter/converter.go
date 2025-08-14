@@ -4,37 +4,14 @@ import "github.com/modelcontextprotocol/go-sdk/mcp"
 
 func AddTools(server *mcp.Server) {
 	mcp.AddTool(server, &mcp.Tool{
-		Name:        "base64_encode",
-		Description: "Encode text to base64",
-	}, Base64Encode)
+		Name:        "encode",
+		Description: "Encode text using various methods (Base64, URL, Hex, HTML Entity).",
+	}, Encode)
 	mcp.AddTool(server, &mcp.Tool{
-		Name:        "base64_decode",
-		Description: "Decode base64 to text",
-	}, Base64Decode)
-	mcp.AddTool(server, &mcp.Tool{
-		Name:        "url_encode",
-		Description: "Encode text for URL",
-	}, UrlEncode)
-	mcp.AddTool(server, &mcp.Tool{
-		Name:        "url_decode",
-		Description: "Decode text from URL",
-	}, UrlDecode)
-	mcp.AddTool(server, &mcp.Tool{
-		Name:        "string_to_hex",
-		Description: "Encode text to hex",
-	}, StringToHex)
-	mcp.AddTool(server, &mcp.Tool{
-		Name:        "hex_to_string",
-		Description: "Decode hex to text",
-	}, HexToString)
-	mcp.AddTool(server, &mcp.Tool{
-		Name:        "html_entity_encode",
-		Description: "Encode text to HTML entities",
-	}, HtmlEntityEncode)
-	mcp.AddTool(server, &mcp.Tool{
-		Name:        "html_entity_decode",
-		Description: "Decode text from HTML entities",
-	}, HtmlEntityDecode)
+		Name:        "decode",
+		Description: "Decode text using various methods (Base64, URL, Hex, HTML Entity).",
+	}, Decode)
+	
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "convert_timestamp",
 		Description: "Convert a timestamp to different formats",
