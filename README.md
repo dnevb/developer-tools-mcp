@@ -6,15 +6,46 @@ Corekit is a Dev Tools server that implements the Model Context Protocol (MCP). 
 
 The tools are inspired by the useful collection of utilities at [it-tools.tech](https://it-tools.tech/).
 
-## Getting Started
+## Instalation
 
-To run the server, you need to have Go installed.
-
-```bash
-go run main.go
+**Go Modules**
+```sh
+go install github.com/dnevb/corekit-mcp
 ```
 
-This will start the MCP server, and you can connect to it with a compatible client.
+**Docker**
+```sh
+docker pull dnevb/corekit-mcp
+```
+
+## Getting Started
+
+
+**Cursor**
+
+[![Install](https://img.shields.io/badge/Install-Cursor-black?style=flat-square&logo=cursor)](https://cursor.com/en/install-mcp?name=corekit&config=eyJjb21tYW5kIjoiY29yZWtpdC1tY3AifQ%3D%3D)
+<br/>
+[![Install](https://img.shields.io/badge/Install-Cursor_Docker-black?style=flat-square&logo=cursor)](https://cursor.com/en/install-mcp?name=corekit&config=eyJjb21tYW5kIjoiZG9ja2VyIHJ1biBkbmV2Yi9jb3Jla2l0LW1jcCJ9)
+
+**VSCode**
+
+[![Install](https://img.shields.io/badge/Install-VSCode-blue?style=flat-square&logo=vscode)](vscode:mcp/install?%7B%22name%22%3A%22corekit%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22corekit-mcp%22%7D)
+<br/>
+[![Install](https://img.shields.io/badge/Install-VSCode_Docker-blue?style=flat-square&logo=vscode)](vscode:mcp/install?%7B%22name%22%3A%22corekit%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22docker%22%2C%22args%22%3A%5B%22run%22%2C%22dnevb%2Fcorekit-mcp%22%5D%7D)
+
+**Gemini Cli**
+
+```json
+{
+  "mcpServers": {
+    "corekit": {
+      "command": "corekit-mcp"
+    }
+  }
+}
+```
+
+in case of using docker replace command content with: `docker run -it dnevb/corekit-mcp` 
 
 ## Available Tools
 
