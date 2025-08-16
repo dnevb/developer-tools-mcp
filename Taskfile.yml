@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  publish:
+    cmd: goreleaser release --clean
+  inspect:
+    cmd: bunx @modelcontextprotocol/inspector go run .
