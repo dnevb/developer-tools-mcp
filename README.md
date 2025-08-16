@@ -1,10 +1,6 @@
-<p align="center">
-  <picture>
-    <img alt="CoreKit logo (egonelbre/gophers)" width="150" src=".assets/gohper.png" />
-  </picture>
-</p>
-
 # Corekit MCP Server
+
+<img alt="CoreKit logo (egonelbre/gophers)" width="100" src=".assets/gohper.png" align="right" />
 
 Corekit is a Dev Tools server that implements the Model Context Protocol (MCP). It's designed to streamline the development process by offering a comprehensive suite of tools that can be seamlessly integrated into AI agents and other development workflows.
 
@@ -45,3 +41,11 @@ This will start the MCP server, and you can connect to it with a compatible clie
 
 - **`jwt_parser`**: Parse JWT tokens to extract header and payload claims.
 - **`slugify_string`**: Convert strings into URL-friendly slugs.
+- **`basic_auth_generator`**: Generate a Basic Auth header from username and password.
+- **`url_parser`**: Parse a URL and extract its components.
+- **`placeholder_creator`**: Generate a placeholder image URL using placehold.co.
+
+### Dev
+
+- **`fake_data_generator`**: Generate fake data of a specified type.
+- **`regex_evaluator`**: Evaluate a regular expression against a given text.
