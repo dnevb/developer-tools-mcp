@@ -9,9 +9,9 @@ import (
 )
 
 type BcryptParams = mcp.CallToolParamsFor[struct {
-	Text     string `json:"text" jsonschema:"Text to hash or compare"`
+	Text      string `json:"text" jsonschema:"Text to hash or compare"`
 	SaltCount int    `json:"salt_count,omitempty" jsonschema:"Number of salt rounds (default 10). Only for hashing."`
-	Hash     string `json:"hash,omitempty" jsonschema:"Bcrypt hash to compare against. If provided, performs comparison instead of hashing."`
+	Hash      string `json:"hash,omitempty" jsonschema:"Bcrypt hash to compare against. If provided, performs comparison instead of hashing."`
 }]
 
 func Bcrypt(
@@ -39,7 +39,7 @@ func Bcrypt(
 		// Perform hashing
 		saltCount := params.Arguments.SaltCount
 		if saltCount == 0 {
-			saltCount = 10 // Default salt rounds
+			saltCount = 10
 		}
 
 		hashedPassword, err := bcrypt.GenerateFromPassword([]byte(params.Arguments.Text), saltCount)

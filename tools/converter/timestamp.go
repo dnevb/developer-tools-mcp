@@ -16,7 +16,6 @@ const (
 	excelEpoch = 25569 - 2
 )
 
-// toExcelTime converts a time.Time to an Excel-compatible float64.
 func toExcelTime(t time.Time) float64 {
 	return float64(t.Unix())/86400.0 + excelEpoch
 }

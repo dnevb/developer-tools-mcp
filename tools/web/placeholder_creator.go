@@ -8,7 +8,6 @@ import (
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 
-// PlaceholderCreatorParams defines the parameters for the placeholder_creator tool.
 type PlaceholderCreatorParams = mcp.CallToolParamsFor[struct {
 	Width           int    `json:"width" jsonschema:"Width of the placeholder image"`
 	Height          int    `json:"height" jsonschema:"Height of the placeholder image"`
@@ -18,7 +17,6 @@ type PlaceholderCreatorParams = mcp.CallToolParamsFor[struct {
 	Format          string `json:"format,omitempty" jsonschema:"Optional: Image format (png, jpeg, gif, webp, avif, svg)"`
 }]
 
-// PlaceholderCreator generates a placeholder image URL.
 func PlaceholderCreator(
 	ctx context.Context,
 	session *mcp.ServerSession,
