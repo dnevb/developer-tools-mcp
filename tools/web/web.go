@@ -1,6 +1,8 @@
 package web
 
-import "github.com/modelcontextprotocol/go-sdk/mcp"
+import (
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+)
 
 func AddTools(server *mcp.Server) {
 	mcp.AddTool(server, &mcp.Tool{
@@ -11,4 +13,8 @@ func AddTools(server *mcp.Server) {
 		Name:        "slugify_string",
 		Description: "Convert a string to a URL-friendly slug.",
 	}, SlugifyString)
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "placeholder_creator",
+		Description: "Generate a placeholder image URL using placehold.co.",
+	}, PlaceholderCreator)
 }

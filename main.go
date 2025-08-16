@@ -5,6 +5,7 @@ import (
 	"dev-tools-mcp/tools/converter"
 	"dev-tools-mcp/tools/crypto"
 	"dev-tools-mcp/tools/web"
+	"dev-tools-mcp/tools/dev"
 	"log"
 
 	"github.com/modelcontextprotocol/go-sdk/mcp"
@@ -20,6 +21,7 @@ func main() {
 	converter.AddTools(server)
 	crypto.AddTools(server)
 	web.AddTools(server)
+	dev.AddTools(server)
 
 	err := server.Run(context.Background(), mcp.NewStdioTransport())
 	if err != nil {
