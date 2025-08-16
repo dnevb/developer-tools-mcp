@@ -1,4 +1,4 @@
-module dev-tools-mcp
+module github.com/dnevb/corekit-mcp
 
 go 1.24.5
 

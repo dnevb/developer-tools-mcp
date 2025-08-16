@@ -2,19 +2,19 @@ package main
 
 import (
 	"context"
-	"dev-tools-mcp/tools/converter"
-	"dev-tools-mcp/tools/crypto"
-	"dev-tools-mcp/tools/web"
-	"dev-tools-mcp/tools/dev"
 	"log"
 
+	"github.com/dnevb/corekit-mcp/tools/converter"
+	"github.com/dnevb/corekit-mcp/tools/crypto"
+	"github.com/dnevb/corekit-mcp/tools/dev"
+	"github.com/dnevb/corekit-mcp/tools/web"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 
 func main() {
 	server := mcp.NewServer(&mcp.Implementation{
-		Name:    "dev_tools",
-		Title:   "Developer tools MCP server",
+		Name:    "corekit",
+		Title:   "CoreKit Developer tools MCP server",
 		Version: "1.0",
 	}, nil)
 
@@ -25,6 +25,6 @@ func main() {
 
 	err := server.Run(context.Background(), mcp.NewStdioTransport())
 	if err != nil {
-		log.Fatalf("dev-tools-mcp failed to run details: %v", err)
+		log.Fatalf("corkeit failed to run, error details: %v", err)
 	}
 }

@@ -1,6 +1,12 @@
-# Dev Tools MCP Server
+<p align="center">
+  <picture>
+    <img alt="CoreKit logo (egonelbre/gophers)" width="150" src=".assets/gohper.png" />
+  </picture>
+</p>
 
-This project is a Dev Tools server implementing the Model Context Protocol (MCP). It aims to simplify the development process by providing a suite of tools that can be integrated into AI agents and other development workflows.
+# Corekit MCP Server
+
+Corekit is a Dev Tools server that implements the Model Context Protocol (MCP). It's designed to streamline the development process by offering a comprehensive suite of tools that can be seamlessly integrated into AI agents and other development workflows.
 
 The tools are inspired by the useful collection of utilities at [it-tools.tech](https://it-tools.tech/).
 
