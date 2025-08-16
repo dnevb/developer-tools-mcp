@@ -17,4 +17,12 @@ func AddTools(server *mcp.Server) {
 		Name:        "placeholder_creator",
 		Description: "Generate a placeholder image URL using placehold.co.",
 	}, PlaceholderCreator)
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "basic_auth_generator",
+		Description: "Generate a Basic Auth header from username and password.",
+	}, BasicAuthGenerator)
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "url_parser",
+		Description: "Parse a URL and extract its components.",
+	}, URLParser)
 }
