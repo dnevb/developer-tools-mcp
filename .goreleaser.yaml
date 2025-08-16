@@ -35,3 +35,16 @@ changelog:
     include:
       - "^feat:"
 
+dockers:
+  - image_templates:
+      - "dnevb/{{ .ProjectName }}:latest"
+      - "dnevb/{{ .ProjectName }}:{{ .Tag }}"
+    build_flag_templates:
+      - "--platform=linux/amd64"
+      - "--label=org.opencontainers.image.title={{ .ProjectName }}"
+      - "--label=org.opencontainers.image.url=https://github.com/dnevb/{{ .ProjectName }}"
+      - "--label=org.opencontainers.image.source=https://github.com/dnevb/{{ .ProjectName }}"
+      - "--label=org.opencontainers.image.version={{ .Version }}"
+      - "--label=org.opencontainers.image.created={{ .Date }}"
+      - "--label=org.opencontainers.image.revision={{ .FullCommit }}"
+
