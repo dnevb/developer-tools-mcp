@@ -1,1 +1,3 @@
 .direnv
+# Added by goreleaser init:
+dist/
